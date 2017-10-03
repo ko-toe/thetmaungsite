@@ -1,0 +1,4 @@
+templates/* linguist-vendored
+home/* linguist-documentation
+*.py linguist-language=Python
+
