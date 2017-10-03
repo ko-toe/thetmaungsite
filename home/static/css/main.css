@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster');
+/*RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body{
+  background-color: #192333;
+}
+
+body,
+h1,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.toggle-menu {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+}
+
+body {
+  background: #f1f1f1;
+  color: #272626;
+  font: normal 20px/1.6 "Noto Sans", sans-serif;
+}
+
+
+/* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: transparent;
+  /*background: linear-gradient(#282828,black);*/
+  opacity: 0.5;
+  transition: opacity .2s;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: align-items .2s;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Lobster',cursive;
+  display: inline-block;
+  padding: 20px 30px;
+  background: #333;
+  color: #fff;
+  margin: 0px 0 0 20px;
+  transition: all .2s;
+  text-transform: none;
+}
+
+.logo:hover{
+  color: #969ba3;
+  text-decoration: none;
+}
+
+
+ul {
+  display: flex;
+  margin: 50px 50px 0 0;
+  padding: 0;
+  transition: margin .2s;
+}
+
+li:not(:last-child) {
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.hover{
+  color:blue;
+}
+
+/*.hover:before{*/
+  /*visibility: visible;*/
+  /*-webkit-transform: scaleX(1);*/
+  /*transform: scaleX(1);*/
+/*}*/
+
+
+li > a:visited {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+.toggle-menu {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 10px 10px 0 0;
+  transition: margin .2s;
+}
+
+.home{
+  background-image: url("/static/img/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  color: #000;
+  font-size: 50px;
+  /*line-height: 700px;*/
+  padding-right: 100px;
+  text-align: right;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column
+  /*position: relative;*/
+}
+
+.home p{
+  /*display: flex;*/
+
+}
+
+
+.animate .home p{
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes example {
+    0% {background-color:transparent; left:-500px; top:0px;}
+    100% {background-color:transparent; left:0px; top:0px;}
+}
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+  /*display: block;*/
+  /*padding: 0 20px;*/
+  width: 100%;
+  /*background-color: #31343a;*/
+  margin: 0 auto;
+  padding: 0;
+  color:white;
+  /*position: relative;*/
+}
+
+main img{
+  width: 100%;
+}
+
+
+/* CONTAINER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*.container{*/
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+  /*padding: 0;*/
+/*}*/
+
+.block{
+  margin-top: -20px;
+  padding: 50px;
+  background: linear-gradient(#050505,#070707);
+  height: auto;
+}
+
+.block h2{
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.block hr{
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+  border: 0;"
+}
+
+#about{
+  text-align: center;
+  margin: 0 auto;
+  height: 700px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#about img{
+  float: left;
+  width: 30%;
+  height: 350px;
+  border-radius: 50%;
+}
+#about p{
+    float: right;
+    /*text-align: center;*/
+    width: 50%;
+}
+
+
+.skills{
+
+}
+
+
+/* STYLES FOR THE "scroll" CLASS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll {
+  background-color: #333;
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+  opacity: 1;
+  height: 70px;
+}
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+    border: double;
+}
+
+.scroll nav {
+  align-items: center;
+  color:#333;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+.scroll li a {
+  color: #fff;
+}
+
+.scroll li a:before {
+  background-color: #fff;
+}
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+
+
+.active{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* STYLES FOR THE COUNTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#top {
+    width: 40px;
+    height: 40px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 0px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    /*z-index: 99; !* Make sure it does not overlap *!*/
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: whitesmoke; /* Set a background color */
+    /*color: white; !* Text color *!*/
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+}
